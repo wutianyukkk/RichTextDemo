@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F52FF8E6209C5F2200BACCC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF8E5209C5F2200BACCC4 /* AppDelegate.m */; };
+		F52FF8E9209C5F2200BACCC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF8E8209C5F2200BACCC4 /* ViewController.m */; };
+		F52FF8EC209C5F2200BACCC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52FF8EA209C5F2200BACCC4 /* Main.storyboard */; };
+		F52FF8EE209C5F2D00BACCC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52FF8ED209C5F2D00BACCC4 /* Assets.xcassets */; };
+		F52FF8F1209C5F2D00BACCC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52FF8EF209C5F2D00BACCC4 /* LaunchScreen.storyboard */; };
+		F52FF8F4209C5F2D00BACCC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF8F3209C5F2D00BACCC4 /* main.m */; };
+		F52FF8FE209C5F2D00BACCC4 /* RichTextDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF8FD209C5F2D00BACCC4 /* RichTextDemoTests.m */; };
+		F52FF909209C5F2D00BACCC4 /* RichTextDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF908209C5F2D00BACCC4 /* RichTextDemoUITests.m */; };
+		F52FF965209C5FF400BACCC4 /* editor.css in Resources */ = {isa = PBXBuildFile; fileRef = F52FF91A209C5FF300BACCC4 /* editor.css */; };
+		F52FF966209C5FF400BACCC4 /* editor.html in Resources */ = {isa = PBXBuildFile; fileRef = F52FF91B209C5FF300BACCC4 /* editor.html */; };
+		F52FF967209C5FF400BACCC4 /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF91C209C5FF300BACCC4 /* jquery.js */; };
+		F52FF968209C5FF400BACCC4 /* jquery.mobile-events.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF91D209C5FF300BACCC4 /* jquery.mobile-events.min.js */; };
+		F52FF969209C5FF400BACCC4 /* js-beautifier.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF91E209C5FF300BACCC4 /* js-beautifier.js */; };
+		F52FF96A209C5FF400BACCC4 /* rangy-classapplier.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF91F209C5FF300BACCC4 /* rangy-classapplier.js */; };
+		F52FF96B209C5FF400BACCC4 /* rangy-core.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF920209C5FF300BACCC4 /* rangy-core.js */; };
+		F52FF96C209C5FF400BACCC4 /* rangy-highlighter.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF921209C5FF300BACCC4 /* rangy-highlighter.js */; };
+		F52FF96D209C5FF400BACCC4 /* rangy-selectionsaverestore.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF922209C5FF300BACCC4 /* rangy-selectionsaverestore.js */; };
+		F52FF96E209C5FF400BACCC4 /* rangy-serializer.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF923209C5FF300BACCC4 /* rangy-serializer.js */; };
+		F52FF96F209C5FF400BACCC4 /* rangy-textrange.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF924209C5FF300BACCC4 /* rangy-textrange.js */; };
+		F52FF970209C5FF400BACCC4 /* shortcode.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF925209C5FF300BACCC4 /* shortcode.js */; };
+		F52FF971209C5FF400BACCC4 /* underscore-min.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF926209C5FF300BACCC4 /* underscore-min.js */; };
+		F52FF972209C5FF400BACCC4 /* WPHybridCallbacker.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF927209C5FF300BACCC4 /* WPHybridCallbacker.js */; };
+		F52FF973209C5FF400BACCC4 /* WPHybridLogger.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF928209C5FF300BACCC4 /* WPHybridLogger.js */; };
+		F52FF974209C5FF400BACCC4 /* wpload.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF929209C5FF300BACCC4 /* wpload.js */; };
+		F52FF975209C5FF400BACCC4 /* wpposter.svg in Resources */ = {isa = PBXBuildFile; fileRef = F52FF92A209C5FF300BACCC4 /* wpposter.svg */; };
+		F52FF976209C5FF400BACCC4 /* wpsave.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF92B209C5FF300BACCC4 /* wpsave.js */; };
+		F52FF977209C5FF400BACCC4 /* ZSSRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = F52FF92C209C5FF300BACCC4 /* ZSSRichTextEditor.js */; };
+		F52FF978209C5FF400BACCC4 /* CommUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF92F209C5FF300BACCC4 /* CommUntil.m */; };
+		F52FF979209C5FF400BACCC4 /* toolimage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52FF930209C5FF300BACCC4 /* toolimage.xcassets */; };
+		F52FF97A209C5FF400BACCC4 /* UIView+ZM.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF932209C5FF300BACCC4 /* UIView+ZM.m */; };
+		F52FF97B209C5FF400BACCC4 /* UIWebView+GUIFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF934209C5FF300BACCC4 /* UIWebView+GUIFixes.m */; };
+		F52FF97C209C5FF400BACCC4 /* WPImageMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF936209C5FF300BACCC4 /* WPImageMeta.m */; };
+		F52FF97D209C5FF400BACCC4 /* ZMEditorField.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF938209C5FF300BACCC4 /* ZMEditorField.m */; };
+		F52FF97E209C5FF400BACCC4 /* ZMEditorImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF93A209C5FF300BACCC4 /* ZMEditorImageHandler.m */; };
+		F52FF97F209C5FF400BACCC4 /* ZMEditorToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF93C209C5FF300BACCC4 /* ZMEditorToolbarButton.m */; };
+		F52FF980209C5FF400BACCC4 /* ZMEditorToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF93E209C5FF300BACCC4 /* ZMEditorToolBarView.m */; };
+		F52FF981209C5FF400BACCC4 /* ZMEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF940209C5FF300BACCC4 /* ZMEditorView.m */; };
+		F52FF982209C5FF400BACCC4 /* ZMEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF942209C5FF300BACCC4 /* ZMEditorViewController.m */; };
+		F52FF983209C5FF400BACCC4 /* ZMEditRichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF944209C5FF300BACCC4 /* ZMEditRichViewController.m */; };
+		F52FF984209C5FF400BACCC4 /* ZMRichView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF946209C5FF300BACCC4 /* ZMRichView.m */; };
+		F52FF995209C603100BACCC4 /* toolimage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52FF994209C603100BACCC4 /* toolimage.xcassets */; };
+		F52FF998209C60E400BACCC4 /* SeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FF997209C60E400BACCC4 /* SeeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F52FF8FA209C5F2D00BACCC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52FF8D9209C5F2100BACCC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52FF8E0209C5F2200BACCC4;
+			remoteInfo = RichTextDemo;
+		};
+		F52FF905209C5F2D00BACCC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52FF8D9209C5F2100BACCC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52FF8E0209C5F2200BACCC4;
+			remoteInfo = RichTextDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F52FF8E1209C5F2200BACCC4 /* RichTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52FF8E4209C5F2200BACCC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F52FF8E5209C5F2200BACCC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F52FF8E7209C5F2200BACCC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F52FF8E8209C5F2200BACCC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F52FF8EB209C5F2200BACCC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F52FF8ED209C5F2D00BACCC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F52FF8F0209C5F2D00BACCC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F52FF8F2209C5F2D00BACCC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52FF8F3209C5F2D00BACCC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F52FF8F9209C5F2D00BACCC4 /* RichTextDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichTextDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52FF8FD209C5F2D00BACCC4 /* RichTextDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextDemoTests.m; sourceTree = "<group>"; };
+		F52FF8FF209C5F2D00BACCC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52FF904209C5F2D00BACCC4 /* RichTextDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichTextDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52FF908209C5F2D00BACCC4 /* RichTextDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextDemoUITests.m; sourceTree = "<group>"; };
+		F52FF90A209C5F2D00BACCC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52FF917209C5FF300BACCC4 /* CommentConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentConst.h; sourceTree = "<group>"; };
+		F52FF91A209C5FF300BACCC4 /* editor.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = editor.css; sourceTree = "<group>"; };
+		F52FF91B209C5FF300BACCC4 /* editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = editor.html; sourceTree = "<group>"; };
+		F52FF91C209C5FF300BACCC4 /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		F52FF91D209C5FF300BACCC4 /* jquery.mobile-events.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.mobile-events.min.js"; sourceTree = "<group>"; };
+		F52FF91E209C5FF300BACCC4 /* js-beautifier.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "js-beautifier.js"; sourceTree = "<group>"; };
+		F52FF91F209C5FF300BACCC4 /* rangy-classapplier.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "rangy-classapplier.js"; sourceTree = "<group>"; };
+		F52FF920209C5FF300BACCC4 /* rangy-core.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "rangy-core.js"; sourceTree = "<group>"; };
+		F52FF921209C5FF300BACCC4 /* rangy-highlighter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "rangy-highlighter.js"; sourceTree = "<group>"; };
+		F52FF922209C5FF300BACCC4 /* rangy-selectionsaverestore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "rangy-selectionsaverestore.js"; sourceTree = "<group>"; };
+		F52FF923209C5FF300BACCC4 /* rangy-serializer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "rangy-serializer.js"; sourceTree = "<group>"; };
+		F52FF924209C5FF300BACCC4 /* rangy-textrange.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "rangy-textrange.js"; sourceTree = "<group>"; };
+		F52FF925209C5FF300BACCC4 /* shortcode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = shortcode.js; sourceTree = "<group>"; };
+		F52FF926209C5FF300BACCC4 /* underscore-min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "underscore-min.js"; sourceTree = "<group>"; };
+		F52FF927209C5FF300BACCC4 /* WPHybridCallbacker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WPHybridCallbacker.js; sourceTree = "<group>"; };
+		F52FF928209C5FF300BACCC4 /* WPHybridLogger.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WPHybridLogger.js; sourceTree = "<group>"; };
+		F52FF929209C5FF300BACCC4 /* wpload.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = wpload.js; sourceTree = "<group>"; };
+		F52FF92A209C5FF300BACCC4 /* wpposter.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wpposter.svg; sourceTree = "<group>"; };
+		F52FF92B209C5FF300BACCC4 /* wpsave.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = wpsave.js; sourceTree = "<group>"; };
+		F52FF92C209C5FF300BACCC4 /* ZSSRichTextEditor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ZSSRichTextEditor.js; sourceTree = "<group>"; };
+		F52FF92E209C5FF300BACCC4 /* CommUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommUntil.h; sourceTree = "<group>"; };
+		F52FF92F209C5FF300BACCC4 /* CommUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommUntil.m; sourceTree = "<group>"; };
+		F52FF930209C5FF300BACCC4 /* toolimage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = toolimage.xcassets; sourceTree = "<group>"; };
+		F52FF931209C5FF300BACCC4 /* UIView+ZM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZM.h"; sourceTree = "<group>"; };
+		F52FF932209C5FF300BACCC4 /* UIView+ZM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZM.m"; sourceTree = "<group>"; };
+		F52FF933209C5FF300BACCC4 /* UIWebView+GUIFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+GUIFixes.h"; sourceTree = "<group>"; };
+		F52FF934209C5FF300BACCC4 /* UIWebView+GUIFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+GUIFixes.m"; sourceTree = "<group>"; };
+		F52FF935209C5FF300BACCC4 /* WPImageMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPImageMeta.h; sourceTree = "<group>"; };
+		F52FF936209C5FF300BACCC4 /* WPImageMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPImageMeta.m; sourceTree = "<group>"; };
+		F52FF937209C5FF300BACCC4 /* ZMEditorField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEditorField.h; sourceTree = "<group>"; };
+		F52FF938209C5FF300BACCC4 /* ZMEditorField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEditorField.m; sourceTree = "<group>"; };
+		F52FF939209C5FF300BACCC4 /* ZMEditorImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEditorImageHandler.h; sourceTree = "<group>"; };
+		F52FF93A209C5FF300BACCC4 /* ZMEditorImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEditorImageHandler.m; sourceTree = "<group>"; };
+		F52FF93B209C5FF300BACCC4 /* ZMEditorToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEditorToolbarButton.h; sourceTree = "<group>"; };
+		F52FF93C209C5FF300BACCC4 /* ZMEditorToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEditorToolbarButton.m; sourceTree = "<group>"; };
+		F52FF93D209C5FF300BACCC4 /* ZMEditorToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEditorToolBarView.h; sourceTree = "<group>"; };
+		F52FF93E209C5FF300BACCC4 /* ZMEditorToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEditorToolBarView.m; sourceTree = "<group>"; };
+		F52FF93F209C5FF300BACCC4 /* ZMEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEditorView.h; sourceTree = "<group>"; };
+		F52FF940209C5FF300BACCC4 /* ZMEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEditorView.m; sourceTree = "<group>"; };
+		F52FF941209C5FF300BACCC4 /* ZMEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEditorViewController.h; sourceTree = "<group>"; };
+		F52FF942209C5FF300BACCC4 /* ZMEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEditorViewController.m; sourceTree = "<group>"; };
+		F52FF943209C5FF300BACCC4 /* ZMEditRichViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEditRichViewController.h; sourceTree = "<group>"; };
+		F52FF944209C5FF300BACCC4 /* ZMEditRichViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEditRichViewController.m; sourceTree = "<group>"; };
+		F52FF945209C5FF300BACCC4 /* ZMRichView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMRichView.h; sourceTree = "<group>"; };
+		F52FF946209C5FF300BACCC4 /* ZMRichView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMRichView.m; sourceTree = "<group>"; };
+		F52FF994209C603100BACCC4 /* toolimage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = toolimage.xcassets; sourceTree = "<group>"; };
+		F52FF996209C60E400BACCC4 /* SeeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeViewController.h; sourceTree = "<group>"; };
+		F52FF997209C60E400BACCC4 /* SeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F52FF8DE209C5F2200BACCC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52FF8F6209C5F2D00BACCC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52FF901209C5F2D00BACCC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F52FF8D8209C5F2100BACCC4 = {
+			isa = PBXGroup;
+			children = (
+				F52FF8E3209C5F2200BACCC4 /* RichTextDemo */,
+				F52FF8FC209C5F2D00BACCC4 /* RichTextDemoTests */,
+				F52FF907209C5F2D00BACCC4 /* RichTextDemoUITests */,
+				F52FF8E2209C5F2200BACCC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F52FF8E2209C5F2200BACCC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF8E1209C5F2200BACCC4 /* RichTextDemo.app */,
+				F52FF8F9209C5F2D00BACCC4 /* RichTextDemoTests.xctest */,
+				F52FF904209C5F2D00BACCC4 /* RichTextDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F52FF8E3209C5F2200BACCC4 /* RichTextDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF916209C5FF300BACCC4 /* RichText */,
+				F52FF8E4209C5F2200BACCC4 /* AppDelegate.h */,
+				F52FF8E5209C5F2200BACCC4 /* AppDelegate.m */,
+				F52FF8E7209C5F2200BACCC4 /* ViewController.h */,
+				F52FF8E8209C5F2200BACCC4 /* ViewController.m */,
+				F52FF8EA209C5F2200BACCC4 /* Main.storyboard */,
+				F52FF8ED209C5F2D00BACCC4 /* Assets.xcassets */,
+				F52FF8EF209C5F2D00BACCC4 /* LaunchScreen.storyboard */,
+				F52FF8F2209C5F2D00BACCC4 /* Info.plist */,
+				F52FF8F3209C5F2D00BACCC4 /* main.m */,
+				F52FF996209C60E400BACCC4 /* SeeViewController.h */,
+				F52FF997209C60E400BACCC4 /* SeeViewController.m */,
+			);
+			path = RichTextDemo;
+			sourceTree = "<group>";
+		};
+		F52FF8FC209C5F2D00BACCC4 /* RichTextDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF8FD209C5F2D00BACCC4 /* RichTextDemoTests.m */,
+				F52FF8FF209C5F2D00BACCC4 /* Info.plist */,
+			);
+			path = RichTextDemoTests;
+			sourceTree = "<group>";
+		};
+		F52FF907209C5F2D00BACCC4 /* RichTextDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF908209C5F2D00BACCC4 /* RichTextDemoUITests.m */,
+				F52FF90A209C5F2D00BACCC4 /* Info.plist */,
+			);
+			path = RichTextDemoUITests;
+			sourceTree = "<group>";
+		};
+		F52FF916209C5FF300BACCC4 /* RichText */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF917209C5FF300BACCC4 /* CommentConst.h */,
+				F52FF918209C5FF300BACCC4 /* RichEdit */,
+				F52FF994209C603100BACCC4 /* toolimage.xcassets */,
+			);
+			path = RichText;
+			sourceTree = "<group>";
+		};
+		F52FF918209C5FF300BACCC4 /* RichEdit */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF919209C5FF300BACCC4 /* Assets */,
+				F52FF92D209C5FF300BACCC4 /* Classes */,
+				F52FF943209C5FF300BACCC4 /* ZMEditRichViewController.h */,
+				F52FF944209C5FF300BACCC4 /* ZMEditRichViewController.m */,
+				F52FF945209C5FF300BACCC4 /* ZMRichView.h */,
+				F52FF946209C5FF300BACCC4 /* ZMRichView.m */,
+			);
+			path = RichEdit;
+			sourceTree = "<group>";
+		};
+		F52FF919209C5FF300BACCC4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF91A209C5FF300BACCC4 /* editor.css */,
+				F52FF91B209C5FF300BACCC4 /* editor.html */,
+				F52FF91C209C5FF300BACCC4 /* jquery.js */,
+				F52FF91D209C5FF300BACCC4 /* jquery.mobile-events.min.js */,
+				F52FF91E209C5FF300BACCC4 /* js-beautifier.js */,
+				F52FF91F209C5FF300BACCC4 /* rangy-classapplier.js */,
+				F52FF920209C5FF300BACCC4 /* rangy-core.js */,
+				F52FF921209C5FF300BACCC4 /* rangy-highlighter.js */,
+				F52FF922209C5FF300BACCC4 /* rangy-selectionsaverestore.js */,
+				F52FF923209C5FF300BACCC4 /* rangy-serializer.js */,
+				F52FF924209C5FF300BACCC4 /* rangy-textrange.js */,
+				F52FF925209C5FF300BACCC4 /* shortcode.js */,
+				F52FF926209C5FF300BACCC4 /* underscore-min.js */,
+				F52FF927209C5FF300BACCC4 /* WPHybridCallbacker.js */,
+				F52FF928209C5FF300BACCC4 /* WPHybridLogger.js */,
+				F52FF929209C5FF300BACCC4 /* wpload.js */,
+				F52FF92A209C5FF300BACCC4 /* wpposter.svg */,
+				F52FF92B209C5FF300BACCC4 /* wpsave.js */,
+				F52FF92C209C5FF300BACCC4 /* ZSSRichTextEditor.js */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F52FF92D209C5FF300BACCC4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F52FF92E209C5FF300BACCC4 /* CommUntil.h */,
+				F52FF92F209C5FF300BACCC4 /* CommUntil.m */,
+				F52FF930209C5FF300BACCC4 /* toolimage.xcassets */,
+				F52FF931209C5FF300BACCC4 /* UIView+ZM.h */,
+				F52FF932209C5FF300BACCC4 /* UIView+ZM.m */,
+				F52FF933209C5FF300BACCC4 /* UIWebView+GUIFixes.h */,
+				F52FF934209C5FF300BACCC4 /* UIWebView+GUIFixes.m */,
+				F52FF935209C5FF300BACCC4 /* WPImageMeta.h */,
+				F52FF936209C5FF300BACCC4 /* WPImageMeta.m */,
+				F52FF937209C5FF300BACCC4 /* ZMEditorField.h */,
+				F52FF938209C5FF300BACCC4 /* ZMEditorField.m */,
+				F52FF939209C5FF300BACCC4 /* ZMEditorImageHandler.h */,
+				F52FF93A209C5FF300BACCC4 /* ZMEditorImageHandler.m */,
+				F52FF93B209C5FF300BACCC4 /* ZMEditorToolbarButton.h */,
+				F52FF93C209C5FF300BACCC4 /* ZMEditorToolbarButton.m */,
+				F52FF93D209C5FF300BACCC4 /* ZMEditorToolBarView.h */,
+				F52FF93E209C5FF300BACCC4 /* ZMEditorToolBarView.m */,
+				F52FF93F209C5FF300BACCC4 /* ZMEditorView.h */,
+				F52FF940209C5FF300BACCC4 /* ZMEditorView.m */,
+				F52FF941209C5FF300BACCC4 /* ZMEditorViewController.h */,
+				F52FF942209C5FF300BACCC4 /* ZMEditorViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F52FF8E0209C5F2200BACCC4 /* RichTextDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52FF90D209C5F2D00BACCC4 /* Build configuration list for PBXNativeTarget "RichTextDemo" */;
+			buildPhases = (
+				F52FF8DD209C5F2200BACCC4 /* Sources */,
+				F52FF8DE209C5F2200BACCC4 /* Frameworks */,
+				F52FF8DF209C5F2200BACCC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichTextDemo;
+			productName = RichTextDemo;
+			productReference = F52FF8E1209C5F2200BACCC4 /* RichTextDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F52FF8F8209C5F2D00BACCC4 /* RichTextDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52FF910209C5F2D00BACCC4 /* Build configuration list for PBXNativeTarget "RichTextDemoTests" */;
+			buildPhases = (
+				F52FF8F5209C5F2D00BACCC4 /* Sources */,
+				F52FF8F6209C5F2D00BACCC4 /* Frameworks */,
+				F52FF8F7209C5F2D00BACCC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F52FF8FB209C5F2D00BACCC4 /* PBXTargetDependency */,
+			);
+			name = RichTextDemoTests;
+			productName = RichTextDemoTests;
+			productReference = F52FF8F9209C5F2D00BACCC4 /* RichTextDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F52FF903209C5F2D00BACCC4 /* RichTextDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52FF913209C5F2D00BACCC4 /* Build configuration list for PBXNativeTarget "RichTextDemoUITests" */;
+			buildPhases = (
+				F52FF900209C5F2D00BACCC4 /* Sources */,
+				F52FF901209C5F2D00BACCC4 /* Frameworks */,
+				F52FF902209C5F2D00BACCC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F52FF906209C5F2D00BACCC4 /* PBXTargetDependency */,
+			);
+			name = RichTextDemoUITests;
+			productName = RichTextDemoUITests;
+			productReference = F52FF904209C5F2D00BACCC4 /* RichTextDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F52FF8D9209C5F2100BACCC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = zhao;
+				TargetAttributes = {
+					F52FF8E0209C5F2200BACCC4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F52FF8F8209C5F2D00BACCC4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F52FF8E0209C5F2200BACCC4;
+					};
+					F52FF903209C5F2D00BACCC4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F52FF8E0209C5F2200BACCC4;
+					};
+				};
+			};
+			buildConfigurationList = F52FF8DC209C5F2100BACCC4 /* Build configuration list for PBXProject "RichTextDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F52FF8D8209C5F2100BACCC4;
+			productRefGroup = F52FF8E2209C5F2200BACCC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F52FF8E0209C5F2200BACCC4 /* RichTextDemo */,
+				F52FF8F8209C5F2D00BACCC4 /* RichTextDemoTests */,
+				F52FF903209C5F2D00BACCC4 /* RichTextDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F52FF8DF209C5F2200BACCC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52FF995209C603100BACCC4 /* toolimage.xcassets in Resources */,
+				F52FF967209C5FF400BACCC4 /* jquery.js in Resources */,
+				F52FF96A209C5FF400BACCC4 /* rangy-classapplier.js in Resources */,
+				F52FF972209C5FF400BACCC4 /* WPHybridCallbacker.js in Resources */,
+				F52FF965209C5FF400BACCC4 /* editor.css in Resources */,
+				F52FF968209C5FF400BACCC4 /* jquery.mobile-events.min.js in Resources */,
+				F52FF96E209C5FF400BACCC4 /* rangy-serializer.js in Resources */,
+				F52FF970209C5FF400BACCC4 /* shortcode.js in Resources */,
+				F52FF973209C5FF400BACCC4 /* WPHybridLogger.js in Resources */,
+				F52FF979209C5FF400BACCC4 /* toolimage.xcassets in Resources */,
+				F52FF96F209C5FF400BACCC4 /* rangy-textrange.js in Resources */,
+				F52FF971209C5FF400BACCC4 /* underscore-min.js in Resources */,
+				F52FF975209C5FF400BACCC4 /* wpposter.svg in Resources */,
+				F52FF966209C5FF400BACCC4 /* editor.html in Resources */,
+				F52FF8F1209C5F2D00BACCC4 /* LaunchScreen.storyboard in Resources */,
+				F52FF969209C5FF400BACCC4 /* js-beautifier.js in Resources */,
+				F52FF96C209C5FF400BACCC4 /* rangy-highlighter.js in Resources */,
+				F52FF8EE209C5F2D00BACCC4 /* Assets.xcassets in Resources */,
+				F52FF974209C5FF400BACCC4 /* wpload.js in Resources */,
+				F52FF8EC209C5F2200BACCC4 /* Main.storyboard in Resources */,
+				F52FF96B209C5FF400BACCC4 /* rangy-core.js in Resources */,
+				F52FF976209C5FF400BACCC4 /* wpsave.js in Resources */,
+				F52FF96D209C5FF400BACCC4 /* rangy-selectionsaverestore.js in Resources */,
+				F52FF977209C5FF400BACCC4 /* ZSSRichTextEditor.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52FF8F7209C5F2D00BACCC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52FF902209C5F2D00BACCC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F52FF8DD209C5F2200BACCC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52FF984209C5FF400BACCC4 /* ZMRichView.m in Sources */,
+				F52FF8E9209C5F2200BACCC4 /* ViewController.m in Sources */,
+				F52FF8F4209C5F2D00BACCC4 /* main.m in Sources */,
+				F52FF97E209C5FF400BACCC4 /* ZMEditorImageHandler.m in Sources */,
+				F52FF978209C5FF400BACCC4 /* CommUntil.m in Sources */,
+				F52FF8E6209C5F2200BACCC4 /* AppDelegate.m in Sources */,
+				F52FF97D209C5FF400BACCC4 /* ZMEditorField.m in Sources */,
+				F52FF97A209C5FF400BACCC4 /* UIView+ZM.m in Sources */,
+				F52FF97F209C5FF400BACCC4 /* ZMEditorToolbarButton.m in Sources */,
+				F52FF980209C5FF400BACCC4 /* ZMEditorToolBarView.m in Sources */,
+				F52FF998209C60E400BACCC4 /* SeeViewController.m in Sources */,
+				F52FF97B209C5FF400BACCC4 /* UIWebView+GUIFixes.m in Sources */,
+				F52FF982209C5FF400BACCC4 /* ZMEditorViewController.m in Sources */,
+				F52FF983209C5FF400BACCC4 /* ZMEditRichViewController.m in Sources */,
+				F52FF981209C5FF400BACCC4 /* ZMEditorView.m in Sources */,
+				F52FF97C209C5FF400BACCC4 /* WPImageMeta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52FF8F5209C5F2D00BACCC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52FF8FE209C5F2D00BACCC4 /* RichTextDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52FF900209C5F2D00BACCC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52FF909209C5F2D00BACCC4 /* RichTextDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F52FF8FB209C5F2D00BACCC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52FF8E0209C5F2200BACCC4 /* RichTextDemo */;
+			targetProxy = F52FF8FA209C5F2D00BACCC4 /* PBXContainerItemProxy */;
+		};
+		F52FF906209C5F2D00BACCC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52FF8E0209C5F2200BACCC4 /* RichTextDemo */;
+			targetProxy = F52FF905209C5F2D00BACCC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F52FF8EA209C5F2200BACCC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52FF8EB209C5F2200BACCC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F52FF8EF209C5F2D00BACCC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52FF8F0209C5F2D00BACCC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F52FF90B209C5F2D00BACCC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F52FF90C209C5F2D00BACCC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F52FF90E209C5F2D00BACCC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NBT9MMRB4V;
+				INFOPLIST_FILE = RichTextDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhao.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F52FF90F209C5F2D00BACCC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NBT9MMRB4V;
+				INFOPLIST_FILE = RichTextDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhao.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F52FF911209C5F2D00BACCC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RichTextDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhao.test.RichTextDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichTextDemo.app/RichTextDemo";
+			};
+			name = Debug;
+		};
+		F52FF912209C5F2D00BACCC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RichTextDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhao.test.RichTextDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichTextDemo.app/RichTextDemo";
+			};
+			name = Release;
+		};
+		F52FF914209C5F2D00BACCC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RichTextDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhao.test.RichTextDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RichTextDemo;
+			};
+			name = Debug;
+		};
+		F52FF915209C5F2D00BACCC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RichTextDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhao.test.RichTextDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RichTextDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F52FF8DC209C5F2100BACCC4 /* Build configuration list for PBXProject "RichTextDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52FF90B209C5F2D00BACCC4 /* Debug */,
+				F52FF90C209C5F2D00BACCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52FF90D209C5F2D00BACCC4 /* Build configuration list for PBXNativeTarget "RichTextDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52FF90E209C5F2D00BACCC4 /* Debug */,
+				F52FF90F209C5F2D00BACCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52FF910209C5F2D00BACCC4 /* Build configuration list for PBXNativeTarget "RichTextDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52FF911209C5F2D00BACCC4 /* Debug */,
+				F52FF912209C5F2D00BACCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52FF913209C5F2D00BACCC4 /* Build configuration list for PBXNativeTarget "RichTextDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52FF914209C5F2D00BACCC4 /* Debug */,
+				F52FF915209C5F2D00BACCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F52FF8D9209C5F2100BACCC4 /* Project object */;
+}

@@ -1,0 +1,171 @@
+//
+//  UIView+ZM.m
+//  zhangmen
+//
+//  Created by gaiay004 on 2017/3/9.
+//  Copyright © 2017年 该亚中国 • 开发团队. All rights reserved.
+//
+
+#import "UIView+ZM.h"
+
+#define kZMOffSet 6666
+
+@implementation UIView (Tag)
+-(void)zm_setTag:(NSInteger)tag {
+    [self setTag:tag + kZMOffSet];
+}
+-(NSInteger)zm_tag {
+    return self.tag - kZMOffSet;
+}
+-(UIView *)zm_viewWithTag:(NSInteger)tag {
+    return [self viewWithTag:tag + kZMOffSet];
+}
+
+@end
+
+@implementation UIView (Frame)
+
+- (CGFloat)zm_left {
+    return self.frame.origin.x;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_left:(CGFloat)x {
+    CGRect frame = self.frame;
+    frame.origin.x = x;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)zm_top {
+    return self.frame.origin.y;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_top:(CGFloat)y {
+    CGRect frame = self.frame;
+    frame.origin.y = y;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)zm_right {
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_right:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - frame.size.width;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)zm_bottom {
+    return self.frame.origin.y + self.frame.size.height;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_bottom:(CGFloat)bottom {
+    CGRect frame = self.frame;
+    frame.origin.y = bottom - frame.size.height;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)zm_centerX {
+    return self.center.x;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_centerX:(CGFloat)centerX {
+    self.center = CGPointMake(centerX, self.center.y);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)zm_centerY {
+    return self.center.y;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_centerY:(CGFloat)centerY {
+    self.center = CGPointMake(self.center.x, centerY);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)zm_width {
+    return self.frame.size.width;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_width:(CGFloat)width {
+    CGRect frame = self.frame;
+    frame.size.width = width;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)zm_height {
+    return self.frame.size.height;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_height:(CGFloat)height {
+    CGRect frame = self.frame;
+    frame.size.height = height;
+    self.frame = frame;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGPoint)zm_origin {
+    return self.frame.origin;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_origin:(CGPoint)origin {
+    CGRect frame = self.frame;
+    frame.origin = origin;
+    self.frame = frame;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGSize)zm_size {
+    return self.frame.size;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setZm_size:(CGSize)size {
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
+- (UIViewController *)zm_viewController{
+    for (UIView* next = self; next; next = next.superview) {
+        UIResponder* nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController*)nextResponder;
+        }
+    }
+    return nil;
+}
+
+@end
+
